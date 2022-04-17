@@ -40,21 +40,26 @@ ul{
 
 .top-head{
   background-color: #34495e;
-  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
   margin-top: 100px;
   position: relative;
 }
 
-.logo{
-  float: left;
-  background-color: #fff;
-  width: 200px;
-  height: 29px;
-  margin: 5px 10px;
+.help{
+  padding: 2px 13px;
+  font-size: 17px;
+  line-height: 22px;
+  width: 174px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.help:hover{
+  text-decoration: underline;
 }
 
 .subscribe{
-  float: right;
   margin: 10px 30px;
   margin-right: 120px;
 }
@@ -161,12 +166,12 @@ ul{
 
 .btn-outline-success {
   color: #808080;
-  border-color: #808080;
+  border-color: #0000;
 }
 
 .btn-outline-success:hover {
   color: #fff;
-  border-color: #fff;
+  border-color: #0000;
   background-color: transparent;
 }
 
@@ -185,6 +190,17 @@ ul{
   display: flex;
 }
 
+.genre-inner li{
+  transition: all 0.3s;
+  padding: 10px 0;
+  font-size: 21px;
+  color: #ffffff8c;
+}
+
+.genre-inner li:hover{
+  color: #fff;
+}
+
 .content-inner{
   background-color: #34495e;
   padding-top: 20px;
@@ -198,11 +214,25 @@ ul{
   height: 370px;
 }
 
+.item:hover .name_cover{
+  text-decoration: underline;
+}
+
+.item .movie_cover:hover{
+  border: 4px solid #fff;
+  opacity: 0.5
+}
+
 .movie_cover{
   height: 305px;
   width: 216px;
   border: 2px solid #fff;
 }
+
+/* .movie_cover:hover{
+  border: 4px solid #fff;
+  opacity: 0.5;
+} */
 
 .name_cover{
   padding: 0 5px;
